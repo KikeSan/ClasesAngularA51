@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Proyecto1';
+  logueado: boolean = false
+
+  ingresar() {
+    this.logueado = !this.logueado
+  }
 }
