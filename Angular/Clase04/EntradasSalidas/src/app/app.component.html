@@ -1,0 +1,15 @@
+<p>
+  {{nombre}}
+</p>
+<ul>
+  <li *ngFor="let alumno of alumnos; let indice = index">{{indice+1}} -> {{alumno}}</li>
+</ul>
+<app-entradas-salidas *ngFor="let alumno of alumnos; let indice = index" [fullname]="alumno" [index]="indice"></app-entradas-salidas>
+<!-- <app-entradas-salidas *ngFor="let alumno of alumnos; let indice = index" [nombreCompleto]="alumno" [indiceDelArray]="indice"></app-entradas-salidas> -->
+
+<!-- <app-salidas (onUpdate)="nombre='Karen'"></app-salidas> -->
+<!-- <app-salidas (onUpdate)="nombre=$event"></app-salidas>  -->  <!-- $event es el valor recibido de onUpdate -->
+<app-salidas (onUpdate)="asignar($event)"></app-salidas>      <!-- asignar esta en el ts de app.component -->
+<p class="salida">
+  {{nombre}}
+</p>
