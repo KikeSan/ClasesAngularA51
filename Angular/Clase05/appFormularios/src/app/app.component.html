@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <form class="col-6" #formulario="ngForm" (ngSubmit)="registrar(formulario)">
+      <div class="form-group">
+        <input type="email" placeholder="Correo" class="form-control" ngModel name="correo" required email #correo="ngModel">
+        <span *ngIf="correo.invalid && correo.touched && correo.errors.required">El correo es obligatorio</span>
+        <span *ngIf="correo.invalid && correo.touched && correo.errors.email">Formato inválido</span>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Nombre" class="form-control" ngModel name="nombre" required #nombre="ngModel">
+        <span *ngIf="nombre.invalid && nombre.touched ">El nombre es obligatorio</span>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Contraseña" class="form-control" ngModel name="password" required #password="ngModel">
+        <span *ngIf="password.invalid && password.touched ">La contraseña es obligatoria</span>
+      </div>
+      <div class="form-group">
+        <input type="number" placeholder="Edad" class="form-control" ngModel name="edad" required min="18" #edad="ngModel">
+        <span *ngIf="correo.invalid && correo.touched && correo.errors.required">Tiene que ser mayor de edad</span>
+      </div>
+      <div>
+        <button class="btn btn-success btn-block" [disabled]="formulario.invalid">
+          Registrar
+        </button>
+        <button type="button" (click)="cargarData()" class="btn btn-warning btn-block">Cargar Data</button>
+        <button type="button" (click)="cargarDataParcial()" class="btn btn-primary btn-block">Cargar Data Parcial</button>
+        
+      </div>
+    </form>
+  </div>
+</div>
