@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <form class="col-6" [formGroup]="group">
+      <div class="form-group">
+        <input type="email" placeholder="Correo" class="form-control" formControlName="correo">
+        <span *ngIf="group.get('correo').hasError('correoGratuito') && group.get('correo').touched">No se aceptan correos gratuitos</span>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Nombre" class="form-control" formControlName="nombre">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Contraseña" class="form-control" formControlName="contrasena">
+        <span *ngIf="group.get('contrasena').hasError('required') && group.get('contrasena').touched">La contraseña es requerida</span>
+        <span *ngIf="group.get('contrasena').hasError('minLength') && group.get('contrasena').touched">El tamaño mínimo es 6 caracteres</span>
+        <span *ngIf="group.get('contrasena').hasError('pattern') && group.get('contrasena').touched">No cumple con el standard de seguridad</span>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Confirmación" class="form-control" formControlName="confirmacion">
+        <span *ngIf="group.get('confirmacion').hasError('contrasenaNoCoincide') && group.get('confirmacion').touched">La contraseña no coincide</span>
+      </div>
+      <div class="form-group">
+        <input type="number" placeholder="Edad" class="form-control" formControlName="edad">
+        <span *ngIf="group.get('edad').hasError('required') && group.get('edad').touched">La edad es requerida</span>
+        <span *ngIf="group.get('edad').hasError('fueraDeRango') && group.get('edad').touched">Ingrese una edad entre 18 y 30 años</span>
+      </div>
+      <div>
+        <button class="btn btn-success btn-block">
+          Registrar
+        </button>
+        <button type="button" (click)="cargarData()" class="btn btn-warning btn-block">Cargar Data</button>
+        <button type="button" (click)="cargarDataParcial()" class="btn btn-primary btn-block">Cargar Data Parcial</button>
+        
+      </div>
+    </form>
+  </div>
+</div>

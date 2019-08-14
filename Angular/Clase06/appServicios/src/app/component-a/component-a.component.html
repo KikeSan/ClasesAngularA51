@@ -1,0 +1,6 @@
+<button (click)="agregar()">Agregar alumno</button>
+<button (click)="listar()">Listar alumnos</button>
+
+<ul>
+	<li *ngFor="let alumno of alumnos">{{alumno.nombre +" "+alumno.apellido}}</li>
+</ul>

@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component } from '@angular/core'
+import { FormGroup,FormControl,Validators } from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -8,39 +8,26 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   
-  @ViewChild("formulario",{static:true}) f:NgForm
+  group:FormGroup
+
+  constructor(){}
+
+  ngOnInit(){
+    this.group = new FormGroup({
+      correo:new FormControl(null,Validators.required),
+      nombre:new FormControl(),
+      contrasena:new FormControl(),
+      edad:new FormControl(),
+    })
+  }
 
   registrar(){
-    if(this.f.valid){
-      console.log(this.f.value);
-      console.log(this.f.form.getRawValue());
-      console.log('Valido');
-      this.f.form.reset()
-    }else{
-      console.log('InValido');
-    }
+    
   }
   cargarData(){
-    this.f.setValue({
-      nombre:"Kike",
-      correo:"kikesan@gmail.com",
-      password:"123",
-      edad:36
-    })
+    
   }
   cargarDataParcial(){
-    this.f.form.patchValue({
-      correo:"kikesan@gmail.com",
-      password:"123"
-    })
+    
   }
-
-  /* registrar(f:NgForm){
-    if(f.valid){
-
-      console.log('Valido');
-    }else{
-      console.log('InValido');
-    }
-  } */
 }
