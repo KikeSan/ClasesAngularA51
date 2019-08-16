@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <form class="col-12" [formGroup]="group">
+      <div class="row">
+      <div class="form-group col-3">
+        <input type="number" placeholder="Lebel" class="form-control" formControlName="lebel">
+      </div>
+      <div class="form-group col-3">
+        <input type="number" placeholder="Cyzone" class="form-control" formControlName="cyzone">
+      </div>
+      <div class="form-group col-3">
+        <input type="number" placeholder="Esika" class="form-control" formControlName="esika">
+      </div>
+
+      <div class="form-group col-3">
+        <h2>
+        <span class="badge badge-secondary">{{total}}</span>
+      </h2>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
