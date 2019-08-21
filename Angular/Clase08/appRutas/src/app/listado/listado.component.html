@@ -1,0 +1,12 @@
+<p>listado works!</p>
+
+<p>La página es: {{pag}}</p>
+<p>El tamaño es: {{tam}}</p>
+<p>El orden es: {{ord}}</p>
+<ul>
+	<li *ngFor="let persona of resultado">{{persona.nombre+" "+persona.apellido}}</li>
+</ul>
+<button (click)="cambiarPagina(1)">1</button>
+<button (click)="cambiarPagina(2)">2</button>
+<button (click)="cambiarPagina(3)">3</button>
+<button (click)="cambiarPagina(4)">4</button>

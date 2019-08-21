@@ -1,0 +1,10 @@
+<ul>
+  <!-- <li><a routerLink="/" routerLinkActive="seleccionada" [routerLinkActiveOptions]="{exact:true}">Login</a></li> -->
+  <li><a routerLink="/usuario/login" routerLinkActive="seleccionada" [routerLinkActiveOptions]="{exact:true}">Login</a></li>
+  <li><a routerLink="/usuario/register" fragment="admin" routerLinkActive="seleccionada">Registro</a></li>
+  <li><a routerLink="/usuario/listado" [queryParams]="{pag:2,tam:5,ord:'apellido'}" routerLinkActive="seleccionada">Listado</a></li>
+  <li><a routerLink="/usuario/edicion/45" routerLinkActive="seleccionada">Edicion</a></li>
+  <li><a routerLink="/cursos/listado/30" [queryParams]="{titulo:'primaria'}" fragment="lista" routerLinkActive="seleccionada">Listado Cursos</a></li>
+</ul>
+fecha = {{fecha}}
+<router-outlet></router-outlet>
