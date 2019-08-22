@@ -31,4 +31,13 @@ export class UsuarioService{
 		.sort((a, b) => a[ord] > b[ord] ? 1 : -1)
 		.slice((pag - 1) * tam, (pag - 1) * tam + tam)
 	}
+
+	genPag(numPag){
+		console.log('Numero de paginas',numPag);
+		let numeros:any
+		for (let index = 0; index < numPag; index++) {
+			numeros.push(index)
+		}
+		return numeros
+	}
 }

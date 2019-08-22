@@ -8,11 +8,12 @@ import { UsuarioService } from '../usuario.service';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
-  pag
-  tam
-  ord
+  pag:number
+  tam:number
+  ord:string
 
-  resultado
+  resultado:any
+  numBotones:[]
 
   constructor(private usuariosService:UsuarioService, private activateRoute:ActivatedRoute, private router:Router) { }
 
@@ -29,10 +30,17 @@ export class ListadoComponent implements OnInit {
       this.listar()
     })
     
-
+    this.genPagination()
   }
   listar(){
     this.resultado = this.usuariosService.listado(this.pag,this.tam,this.ord)
+    console.log('Service result:' ,this.usuariosService.listado(this.pag,this.tam,this.ord));
+    
+  }
+
+  genPagination(){
+    
+    this.numBotones = this.usuariosService.genPag(this.pag)
   }
 
   cambiarPagina(pag:number){
@@ -40,6 +48,7 @@ export class ListadoComponent implements OnInit {
     this.router.navigate(["/usuario","listado"],{queryParams:{pag,rol:"administrador"},fragment:"admin",queryParamsHandling:"merge"})
 
   }
+
 
 
 }
