@@ -1,0 +1,25 @@
+<p>Estado de la promesa: {{estado}}</p>
+<table class="table">
+  <thead class="thead-dark ">
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+  </thead>
+  <tr *ngFor="let persona of personas | async">
+      <td >{{persona.nombre}} </td>
+      <td >{{persona.apellido}} </td>
+  </tr>
+</table>
+
+<table class="table">
+    <thead class="thead-dark ">
+      <th scope="col">Título</th>
+      <th scope="col">Descripción</th>
+    </thead>
+    <tr *ngFor="let receta of recetas">
+        <td >{{receta.titulo}} </td>
+        <td >{{receta.descripcion}} </td>
+    </tr>
+  </table>
+
+  <p>{{error}}</p>
+  <button (click)="login()">Login</button>

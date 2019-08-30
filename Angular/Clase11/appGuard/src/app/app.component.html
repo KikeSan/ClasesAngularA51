@@ -1,0 +1,37 @@
+<!-- <ul>
+    <li><a routerLink="/alumno/login" routerLinkActive="seleccionada" [routerLinkActiveOptions]="{exact:true}">Login</a></li>
+    <li><a routerLink="/alumno" fragment="admin" routerLinkActive="seleccionada">Registro</a></li>
+    <li><a routerLink="/alumno/nuevo" [queryParams]="{pag:2,tam:5,ord:'apellido'}" routerLinkActive="seleccionada">Listado</a></li>
+    <li><a routerLink="/alumno/edicion/45" routerLinkActive="seleccionada">Edición</a></li>
+  </ul>
+  <router-outlet></router-outlet> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Sistema</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/" >Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/alumno" >Listado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/alumno/nuevo" >Nuevo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/alumno/edicion" >Edición</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+
+    <router-outlet></router-outlet>

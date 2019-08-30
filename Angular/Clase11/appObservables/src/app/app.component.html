@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark ">
+    <th scope="col">nombre</th>
+    <th scope="col">apellido</th>
+  </thead>
+  <tr *ngFor="let alum of alumnos">
+      <td >{{alum.nombre}} </td>
+      <td >{{alum.apellido}} </td>
+  </tr>
+</table>
+
+<ul>
+  <li>
+    <a routerLink="/">Comp 1</a>
+  </li>
+  <li>
+    <a routerLink="/c2">Comp 2</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
