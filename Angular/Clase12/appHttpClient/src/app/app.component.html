@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-stripped col-4">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let alumno of lista">
+          <td>{{alumno._id}}</td>
+          <td>{{alumno.nombre}}</td>
+          <td>{{alumno.apellido}}</td>
+          <td><button class="btn btn-primary" (click)="editar(alumno._id)">Editar</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="col-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

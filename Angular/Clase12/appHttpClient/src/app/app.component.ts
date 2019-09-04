@@ -1,0 +1,30 @@
+import { Component } from '@angular/core';
+import { AlumnoService } from './alumno.service';
+import { Alumno } from './alumno';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  lista:Alumno[]
+  constructor(private alumnoService:AlumnoService, private router:Router){}
+
+  ngOnInit(){
+    this.listar()
+    this.alumnoService.onActualizar.subscribe(
+      ()=>this.listar()
+    )
+  }
+
+  listar(){
+    this.alumnoService.listar()
+    .subscribe(resp =>this.lista = resp)
+  }
+
+  editar(_id:string){
+    this.router.navigate(["/alumno","editar",_id])
+  }
+}
