@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AlumnoService } from '../alumno.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
@@ -13,7 +13,7 @@ export class EditarComponent implements OnInit {
   _id:string
   grupo:FormGroup
 
-  constructor(private activateRoute:ActivatedRoute, private alumnoService:AlumnoService) { }
+  constructor(private activateRoute:ActivatedRoute, private alumnoService:AlumnoService, private router:Router) { }
 
   ngOnInit() {
     this.grupo = new FormGroup({
@@ -44,6 +44,10 @@ export class EditarComponent implements OnInit {
       this.alumnoService.onActualizar.next()
       alert("Alumno Actualizado!")
     })
+  }
+
+  volver(){
+    this.router.navigate(["/"])
   }
 
 }

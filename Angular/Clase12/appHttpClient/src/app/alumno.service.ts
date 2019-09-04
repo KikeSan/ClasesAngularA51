@@ -19,12 +19,18 @@ export class AlumnoService {
   detallar(_id:string):Observable<Alumno>{
     return this.http.get<Alumno>(`http://clase.tibajodemanda.com/alumno/${_id}`).pipe(pluck("result"))
   }
-  insertar(){}
+  insertar(alumno:Alumno):Observable<any>{
+    return this.http.post(`http://clase.tibajodemanda.com/alumno/`,alumno)
+  }
   
   modificar(alumno:Alumno):Observable<any>{
     return this.http.put(`http://clase.tibajodemanda.com/alumno/${alumno._id}`,alumno)
   }
 
-  eliminar(){}
+  eliminar(alumno:Alumno):Observable<any>{
+
+    console.log("DELETE",alumno);
+    return this.http.delete(`http://clase.tibajodemanda.com/alumno/${alumno._id}`)
+  }
 
 }

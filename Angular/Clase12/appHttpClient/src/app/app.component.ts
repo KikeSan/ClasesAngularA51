@@ -27,4 +27,14 @@ export class AppComponent {
   editar(_id:string){
     this.router.navigate(["/alumno","editar",_id])
   }
+
+  agregarAlumno(){
+    this.router.navigate(["/alumno","nuevo"])
+  }
+
+  eliminar(alumno){
+    
+    this.alumnoService.eliminar(alumno)
+    .subscribe(resp=>this.lista = resp)
+  }
 }

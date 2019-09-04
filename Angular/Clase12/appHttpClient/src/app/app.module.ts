@@ -5,18 +5,21 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import { EditarComponent } from './editar/editar.component'
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { NuevoComponent } from './nuevo/nuevo.component'
 
 const rutas: Routes = [
   {path:'alumno', children:[
-    {path:"editar/:_id", component:EditarComponent}
+    {path:"editar/:_id", component:EditarComponent},
+    {path:"nuevo", component:NuevoComponent},
   ]}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditarComponent
+    EditarComponent,
+    NuevoComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, RouterModule.forRoot(rutas), ReactiveFormsModule
