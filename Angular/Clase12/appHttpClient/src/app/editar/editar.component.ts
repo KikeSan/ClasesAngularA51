@@ -42,6 +42,7 @@ export class EditarComponent implements OnInit {
     this.alumnoService.modificar(this.grupo.getRawValue())
     .subscribe(resp=>{
       this.alumnoService.onActualizar.next()
+      this.router.navigate(["/"])
       alert("Alumno Actualizado!")
     })
   }

@@ -22,11 +22,11 @@ export class NuevoComponent implements OnInit {
       apellido: new FormControl(null,Validators.required),
     })
 
-    this._id = this.activateRouter.snapshot.paramMap.get('_id')
+    /* this._id = this.activateRouter.snapshot.paramMap.get('_id')
     this.alumnoService.detallar(this._id)
     .subscribe(
       resp => this.grupo.patchValue(resp)
-    )
+    ) */
     
   }
 

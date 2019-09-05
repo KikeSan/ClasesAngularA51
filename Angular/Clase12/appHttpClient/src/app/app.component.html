@@ -1,27 +1,32 @@
 <div class="container-fluid">
   <div class="row">
-    <button class="btn btn-primary" (click)="agregarAlumno()">Añadir nuevo alumno</button>
+    <div class="col-6 crearUsuario">
+      <button class="btn btn-primary" (click)="agregarAlumno()">Añadir nuevo alumno</button>
+    </div>
   </div>
   <div class="row">
-    <table class="table table-stripped col-4">
-      <thead>
+    <table class="table table-striped col-6">
+      <thead class="thead-dark">
         <tr>
           <th>ID</th>
           <th>Nombre</th>
           <th>Apellido</th>
+          <th class="text-center">Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let alumno of lista">
-          <td>{{alumno._id}}</td>
+          <td>{{alumno._id.substr(0,8)}}</td>
           <td>{{alumno.nombre}}</td>
           <td>{{alumno.apellido}}</td>
-          <td><button class="btn btn-primary" (click)="editar(alumno._id)">Editar</button></td>
-          <td><button class="btn btn-danger" (click)="eliminar(alumno)">Eliminar</button></td>
+          <td class="container text-center">
+            <button class="btn btn-primary" (click)="editar(alumno._id)">Editar</button> 
+            <button class="btn btn-danger" (click)="eliminar(alumno)">Eliminar</button>
+          </td>
         </tr>
       </tbody>
     </table>
-    <div class="col-4">
+    <div class="col-6">
       <router-outlet></router-outlet>
     </div>
   </div>
