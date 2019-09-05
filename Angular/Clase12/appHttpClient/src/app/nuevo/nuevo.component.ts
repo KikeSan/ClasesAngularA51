@@ -10,6 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class NuevoComponent implements OnInit {
 
+  _id:string
   grupo:FormGroup 
 
   constructor(private activateRouter:ActivatedRoute, private alumnoService:AlumnoService, private router:Router) { }
@@ -21,7 +22,11 @@ export class NuevoComponent implements OnInit {
       apellido: new FormControl(null,Validators.required),
     })
 
-
+    this._id = this.activateRouter.snapshot.paramMap.get('_id')
+    this.alumnoService.detallar(this._id)
+    .subscribe(
+      resp => this.grupo.patchValue(resp)
+    )
     
   }
 
@@ -29,6 +34,7 @@ export class NuevoComponent implements OnInit {
     this.alumnoService.insertar(this.grupo.getRawValue())
     .subscribe(resp=>{
       this.alumnoService.onActualizar.next()
+      this.router.navigate(["/"])
       alert("Alumno Creado!")
     })
   }
