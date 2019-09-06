@@ -22,7 +22,7 @@ const rutas: Routes = [
     NuevoComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, RouterModule.forRoot(rutas), ReactiveFormsModule
+    BrowserModule, HttpClientModule, RouterModule.forRoot(rutas), ReactiveFormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
