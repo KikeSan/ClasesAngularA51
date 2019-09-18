@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import {RouterModule, Routes} from '@angular/router'
 import { ListadoComponent as ListadoLibrosComponent } from './libros/listado/listado.component';
 import { LibrosModule } from './libros/libros.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const rutas:Routes = [
   {path:'', component:LoginComponent},
@@ -27,7 +28,8 @@ const rutas:Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(rutas),
-    LibrosModule
+    LibrosModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
