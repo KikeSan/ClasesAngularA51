@@ -1,25 +1,32 @@
-<p>Fecha:{{fecha}}</p>
-<p>Fecha con formato por defecto: {{fecha | date}}</p>
-<p>Fecha con formato y en mayúscula: {{fecha | date | uppercase}}</p> <!-- Importa mucho el orden de los pipes date recibe un dato de tipo fecha -->
-<p>Fecha corta: {{fecha | date:"shortDate"}}</p>
-<p>Hora larga: {{fecha | date:"longTime"}}</p>
-<p>Fecha perzonalizada: {{fecha | date:"dd/MM/yyyy"}}</p>
-<p>Fecha perzonalizada: {{fecha | date:"dd-MMM-yy"}}</p> <!-- https://angular.io/api/common/DatePipe -->
-<p>Fecha perzonalizada: {{fecha | date:"dd MMM,yyyy hh:ss"}}</p>
+<p>Fecha:{{ fecha }}</p>
+<p>Fecha con formato por defecto: {{ fecha | date }}</p>
+<p>Fecha con formato y en mayúscula: {{ fecha | date | uppercase }}</p>
+<!-- Importa mucho el orden de los pipes date recibe un dato de tipo fecha -->
+<p>Fecha corta: {{ fecha | date: 'shortDate' }}</p>
+<p>Hora larga: {{ fecha | date: 'longTime' }}</p>
+<p>Fecha perzonalizada: {{ fecha | date: 'dd/MM/yyyy' }}</p>
+<p>Fecha perzonalizada: {{ fecha | date: 'dd-MMM-yy' }}</p>
+<!-- https://angular.io/api/common/DatePipe -->
+<p>Fecha perzonalizada: {{ fecha | date: 'dd MMM,yyyy hh:ss' }}</p>
 
 <p>
-  {{texto | reducidor:5:'mas'}}
+  {{ texto | reducidor: 5:'mas' }}
 </p>
 
 <div class="input-group col-6">
   <!-- <input class="form-control" type="text" (input)="busqueda=$event.target.value"> -->
-  <input class="form-control" type="text" [ngModel]="busqueda" (ngModelChange)="busqueda=$event">
+  <input
+    class="form-control"
+    type="text"
+    [ngModel]="busqueda"
+    (ngModelChange)="busqueda = $event"
+  />
   <!-- [ngModel] como entrada y (ngModelChange) como salida. $event ya tiene el valor del input -->
 
-  <input class="form-control" type="text" [(ngModel)]="busqueda" >
+  <input class="form-control" type="text" [(ngModel)]="busqueda" />
   <!-- [(ngModel)] hace de entrada y salida y ya no necesita el $event -->
 </div>
-<br>
+<br />
 <table class="table">
   <thead>
     <tr>
@@ -28,9 +35,9 @@
       <th>Sinopsis</th>
     </tr>
   </thead>
-  <tr *ngFor="let libro of libros | filtros:busqueda">
-    <td>{{libro.titulo}}</td>
-    <td>{{libro.autor}}</td>
-    <td>{{libro.sinopsis}}</td>
+  <tr *ngFor="let libro of libros | filtros: busqueda">
+    <td>{{ libro.titulo }}</td>
+    <td>{{ libro.autor }}</td>
+    <td>{{ libro.sinopsis }}</td>
   </tr>
 </table>
