@@ -5,6 +5,7 @@ import express = require("express");
 import RouterAlumnos from "./routes/alumnos.route" */
 import {RouterAlumnos,RouterUsuarios} from "./routes"
 import {Request} from "express"
+import * as bodyParser from 'body-parser'
 
 let httpServer: http.Server
 let app = express()
@@ -19,6 +20,9 @@ interface RequestApp extends Request{
 const inicializar = ():Promise<any> => {
 	return new Promise((resolve, reject)=>{
 		httpServer = http.createServer(app)
+
+		app.use(bodyParser.json())
+		app.use(bodyParser.urlencoded({extended:false}))
 
 		app.use("/users",(req:RequestApp,res,next)=>{
 			req.estaAutenticado= true
