@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class GenericoController {
     constructor(modelo) {
         this.modelo = modelo;
+        this.listar = this.listar.bind(this);
     }
-    //this.modelo = this.modelo.bind(this)
     listar(req, res) {
         res.type("application/json").send({
             name: "Fullstack",

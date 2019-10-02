@@ -1,7 +1,9 @@
 class GenericoController{
-	constructor(private modelo:any){}
+	constructor(private modelo:any){
+		this.listar = this.listar.bind(this)
+	}
 
-	//this.modelo = this.modelo.bind(this)
+	
 
 	listar(req,res){
 		res.type("application/json").send({
