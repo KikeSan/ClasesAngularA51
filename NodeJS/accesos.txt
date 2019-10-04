@@ -1,0 +1,3 @@
+mongodb+srv://user-recetas:<password>@cluster0-h6wgd.mongodb.net/admin?retryWrites=true&w=majority
+
+Driver para conectar: Mongoose
