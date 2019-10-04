@@ -11,7 +11,7 @@ let httpServer: http.Server
 let app = express()
 
 // comandos node
-// ts-node server //levanta el servidor
+// ts-node server 			//levanta el servidor
 
 interface RequestApp extends Request{
 	estaAutenticado:boolean
