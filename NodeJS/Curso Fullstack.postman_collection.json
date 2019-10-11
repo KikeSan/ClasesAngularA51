@@ -1,0 +1,217 @@
+{
+	"id": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+	"name": "Curso Fullstack",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Usuario",
+			"description": "",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"order": [
+				"5d9c6ee7-34eb-96a1-407e-5bb5f1d6345f",
+				"874ce2d2-c395-4268-32eb-ddfcad8d4298",
+				"6ba1ddf1-5d15-1107-83c2-770313d67dac",
+				"29a70380-5c36-5578-2527-f77a63cd3c45",
+				"9b3da678-c5ad-78f4-2bea-f9a9e69a8918"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		}
+	],
+	"folders_order": [
+		"99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+	],
+	"timestamp": 1570754099214,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "29a70380-5c36-5578-2527-f77a63cd3c45",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Jason",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "apellido",
+					"value": "Prueba",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "correo",
+					"value": "json@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "kwoeiruyruessh",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Insertar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1570756220031,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
+		{
+			"id": "5d9c6ee7-34eb-96a1-407e-5bb5f1d6345f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/usuarios",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1570754177877,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
+		{
+			"id": "6ba1ddf1-5d15-1107-83c2-770313d67dac",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios/5d96b62387f7c914253b094c",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "KikeSan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "ObtenerUno",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1570756103949,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
+		{
+			"id": "874ce2d2-c395-4268-32eb-ddfcad8d4298",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios/5d96b62387f7c914253b094c",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "KikeSan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Actualizar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1570755977316,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
+		{
+			"id": "9b3da678-c5ad-78f4-2bea-f9a9e69a8918",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/usuarios/5d9fc3251c9d440000dc5f28",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": null,
+			"dataMode": "params",
+			"name": "Eliminar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1570756312869,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		}
+	]
+}
