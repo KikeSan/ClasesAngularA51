@@ -1,3 +1,17 @@
 mongodb+srv://user-recetas:<password>@cluster0-h6wgd.mongodb.net/admin?retryWrites=true&w=majority
 
 Driver para conectar: Mongoose
+
+
+"scripts": {
+    "qa": "ts-node server",
+    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess 'node dist/server.js'",
+		"start:prod": "cross-env NODE_ENV=Production node dist/server.js",
+    "build": "tsc",
+    "prod": "npm run build && npm run start:prod",
+    "test": "cross-env NODE_ENV=test echo \"Error: no test specified\" && exit 1"
+  },
+
+	cross-env para resolver problemas en windows
+
+	JMeter pruebas de stress
