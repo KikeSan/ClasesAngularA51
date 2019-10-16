@@ -5,6 +5,18 @@
 	"order": [],
 	"folders": [
 		{
+			"name": "Roles",
+			"description": "",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"order": [
+				"d2e41de7-0a82-b54a-ab03-978710c07ebc",
+				"e9aa1dea-2095-f7c0-2295-5c7a65bb6e50"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+		},
+		{
 			"name": "Usuario",
 			"description": "",
 			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
@@ -13,7 +25,8 @@
 				"874ce2d2-c395-4268-32eb-ddfcad8d4298",
 				"6ba1ddf1-5d15-1107-83c2-770313d67dac",
 				"29a70380-5c36-5578-2527-f77a63cd3c45",
-				"9b3da678-c5ad-78f4-2bea-f9a9e69a8918"
+				"9b3da678-c5ad-78f4-2bea-f9a9e69a8918",
+				"04ba70d0-efa6-3413-3f33-afac05ad7f46"
 			],
 			"owner": 0,
 			"folders_order": [],
@@ -21,12 +34,59 @@
 		}
 	],
 	"folders_order": [
-		"99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		"99ef21dd-1809-7b31-c8a4-67ae35daaa6f",
+		"19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
 	],
 	"timestamp": 1570754099214,
 	"owner": 0,
 	"public": false,
 	"requests": [
+		{
+			"id": "04ba70d0-efa6-3413-3f33-afac05ad7f46",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": [
+				{
+					"key": "correo",
+					"value": "papi@gmail2.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "tupapiforever",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1571189072565,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
 		{
 			"id": "29a70380-5c36-5578-2527-f77a63cd3c45",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
@@ -212,6 +272,69 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+		},
+		{
+			"id": "d2e41de7-0a82-b54a-ab03-978710c07ebc",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/roles",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1571190574635,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+		},
+		{
+			"id": "e9aa1dea-2095-f7c0-2295-5c7a65bb6e50",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/roles",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Insertar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1571190805422,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
 		}
 	]
 }
