@@ -1,5 +1,6 @@
 const jwt = require("jwt-simple")
 const moment = require("moment")
+import httpStatus = require("http-status-codes")
 const yenv = require("yenv")
 const env = yenv() //para usar las variables del archivo yaml
 
@@ -23,7 +24,7 @@ const validarToken = token => {
 			resolve(payload)
 		} catch (error) {
 			reject({
-				status:401,
+				status:httpStatus.UNAUTHORIZED,
 				message:error.message
 			})
 		}
