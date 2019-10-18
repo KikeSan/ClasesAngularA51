@@ -9,7 +9,7 @@ const controller = new ControllerUsuarios()
 
 
 
-Router.get("/",authentication,authorization("Admin","Auditor"),catchAsync(controller.listar))
+Router.get("/",authentication,/* authorization("Admin","Auditor"), */catchAsync(controller.listar))
 Router.get("/:_id",catchAsync(controller.obtenerUno))
 Router.post("/",upload(), catchAsync(controller.insertar))
 Router.post("/login",catchAsync(controller.login))

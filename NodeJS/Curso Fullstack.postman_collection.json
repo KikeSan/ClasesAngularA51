@@ -1,5 +1,5 @@
 {
-	"id": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+	"id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 	"name": "Curso Fullstack",
 	"description": "",
 	"order": [],
@@ -7,88 +7,43 @@
 		{
 			"name": "Roles",
 			"description": "",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"order": [
-				"d2e41de7-0a82-b54a-ab03-978710c07ebc",
-				"e9aa1dea-2095-f7c0-2295-5c7a65bb6e50"
+				"67278180-5dd7-5c14-3338-8153c5c49617",
+				"d81b7818-cec7-1b7f-2865-4a543f05e113"
 			],
 			"owner": 0,
 			"folders_order": [],
-			"id": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+			"id": "57b361e0-0a1d-b6eb-ced0-9cd32d79a415"
 		},
 		{
 			"name": "Usuario",
 			"description": "",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"order": [
-				"5d9c6ee7-34eb-96a1-407e-5bb5f1d6345f",
-				"874ce2d2-c395-4268-32eb-ddfcad8d4298",
-				"6ba1ddf1-5d15-1107-83c2-770313d67dac",
-				"29a70380-5c36-5578-2527-f77a63cd3c45",
-				"9b3da678-c5ad-78f4-2bea-f9a9e69a8918",
-				"04ba70d0-efa6-3413-3f33-afac05ad7f46"
+				"47b85e13-74c9-87ba-2c90-ca9465d8e161",
+				"71a4f527-0a52-78fa-7b3a-eb6a75b6dc60",
+				"c043a5a0-1bd9-d5a5-77fb-78469067cccd",
+				"0ef623ed-b6dc-dd2f-6713-99872923f073",
+				"55e6609e-c12d-b1a0-a67a-50074bbdb399",
+				"9f0fa801-9fbf-d93a-1687-3fe0f58a39e8"
 			],
 			"owner": 0,
 			"folders_order": [],
-			"id": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"id": "662f4fe5-677a-5457-86bd-bce6fee6e9dd"
 		}
 	],
 	"folders_order": [
-		"99ef21dd-1809-7b31-c8a4-67ae35daaa6f",
-		"19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+		"662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+		"57b361e0-0a1d-b6eb-ced0-9cd32d79a415"
 	],
 	"timestamp": 1570754099214,
 	"owner": 0,
 	"public": false,
+	"hasRequests": true,
 	"requests": [
 		{
-			"id": "04ba70d0-efa6-3413-3f33-afac05ad7f46",
-			"headers": "Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:3000/usuarios/login",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
-			"data": [
-				{
-					"key": "correo",
-					"value": "papi@gmail2.com",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "contrasena",
-					"value": "tupapiforever",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"name": "Login",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1571189072565,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
-		},
-		{
-			"id": "29a70380-5c36-5578-2527-f77a63cd3c45",
+			"id": "0ef623ed-b6dc-dd2f-6713-99872923f073",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -104,7 +59,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"data": [
 				{
 					"key": "nombre",
@@ -145,10 +100,11 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "5d9c6ee7-34eb-96a1-407e-5bb5f1d6345f",
+			"id": "47b85e13-74c9-87ba-2c90-ca9465d8e161",
 			"headers": "",
 			"headerData": [],
 			"url": "http://localhost:3000/usuarios",
@@ -157,7 +113,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"data": null,
 			"dataMode": "params",
 			"name": "Listar",
@@ -169,49 +125,61 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "6ba1ddf1-5d15-1107-83c2-770313d67dac",
-			"headers": "Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:3000/usuarios/5d96b62387f7c914253b094c",
+			"id": "55e6609e-c12d-b1a0-a67a-50074bbdb399",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/usuarios/5d9fc3251c9d440000dc5f28",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
-			"data": [
-				{
-					"key": "nombre",
-					"value": "KikeSan",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"name": "ObtenerUno",
+			"method": "DELETE",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Eliminar",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1570756103949,
+			"time": 1570756312869,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "874ce2d2-c395-4268-32eb-ddfcad8d4298",
+			"id": "67278180-5dd7-5c14-3338-8153c5c49617",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/roles",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Listar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1571190574635,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "57b361e0-0a1d-b6eb-ced0-9cd32d79a415",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
+		},
+		{
+			"id": "71a4f527-0a52-78fa-7b3a-eb6a75b6dc60",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -227,7 +195,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "PUT",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"data": [
 				{
 					"key": "nombre",
@@ -247,58 +215,98 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "9b3da678-c5ad-78f4-2bea-f9a9e69a8918",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/usuarios/5d9fc3251c9d440000dc5f28",
+			"id": "9f0fa801-9fbf-d93a-1687-3fe0f58a39e8",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios/login",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
-			"method": "DELETE",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
-			"data": null,
-			"dataMode": "params",
-			"name": "Eliminar",
+			"method": "POST",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
+			"data": [
+				{
+					"key": "correo",
+					"value": "papi@gmail2.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "tupapiforever",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Login",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1570756312869,
+			"time": 1571189072565,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "99ef21dd-1809-7b31-c8a4-67ae35daaa6f"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "d2e41de7-0a82-b54a-ab03-978710c07ebc",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/roles",
+			"id": "c043a5a0-1bd9-d5a5-77fb-78469067cccd",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuarios/5d96b62387f7c914253b094c",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
-			"data": null,
-			"dataMode": "params",
-			"name": "Listar",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "KikeSan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "ObtenerUno",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1571190574635,
+			"time": 1570756103949,
 			"version": 2,
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+			"folder": "662f4fe5-677a-5457-86bd-bce6fee6e9dd",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		},
 		{
-			"id": "e9aa1dea-2095-f7c0-2295-5c7a65bb6e50",
+			"id": "d81b7818-cec7-1b7f-2865-4a543f05e113",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -314,7 +322,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "487349a1-8f2a-2ab0-1de0-e50a676b9376",
+			"collectionId": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7",
 			"data": [
 				{
 					"key": "nombre",
@@ -334,7 +342,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "19bdf60b-65b7-0cf8-ce01-ea58c786eddb"
+			"folder": "57b361e0-0a1d-b6eb-ced0-9cd32d79a415",
+			"collection_id": "eaaf333a-4bc4-fa37-9d94-c9a029fc22d7"
 		}
 	]
 }
